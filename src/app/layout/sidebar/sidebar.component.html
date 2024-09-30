@@ -1,0 +1,11 @@
+<nav id="footer-nav" class="bg-light">
+    <ul class="nav flex-row justify-content-around">
+      <li class="nav-item" *ngFor="let navItem of sideNavList" (click)="navigateTo(navItem.path)">
+        <a class="nav-link active">
+          <i [class]="navItem.icon"></i>
+          <span class="nav-link-text"> {{ navItem.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  

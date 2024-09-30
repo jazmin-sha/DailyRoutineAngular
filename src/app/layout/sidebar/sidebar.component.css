@@ -1,0 +1,72 @@
+#footer-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    z-index: 100;
+    padding: 0; /* Remove padding */
+    margin: 0;  /* Remove margin */
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-evenly; /* Ensure even spacing across the full width */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .nav-item {
+    text-align: center;
+    flex: 1; /* Ensures even distribution of items */
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .nav-link i {
+    font-size: 18px;
+  }
+  
+  .nav-link-text {
+    margin-left: 5px;
+    display: inline-block;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .nav-link {
+      font-size: 12px; /* Slightly smaller font on mobile */
+    }
+  
+    .nav-item {
+      width: 25%; /* Adjusts width for smaller screens */
+    }
+  
+    .nav-link i {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .nav-item {
+      width: 50%; /* 2 items per row on very small screens */
+    }
+  
+    .nav-link {
+      padding: 8px 0;
+    }
+  
+    .nav-link-text {
+      display: block; /* Ensure text doesn't overflow */
+      margin-left: 0;
+    }
+  }
+  

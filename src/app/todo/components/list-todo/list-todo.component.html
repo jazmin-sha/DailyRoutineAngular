@@ -1,0 +1,38 @@
+<app-sidebar></app-sidebar>
+<div class="container mx-auto p-4">
+  <h2 class="text-2xl font-bold mb-4">Todo List</h2>
+  <div class="bg-white shadow-md rounded-lg p-4">
+    <ul class="list-none">
+      <ng-container *ngIf="items && items.length">
+        <ng-container *ngFor="let item of items">
+          <li class="flex items-center justify-between border-b border-gray-200 py-2 px-4">
+            <div class="flex items-center space-x-2">
+              <input 
+                type="checkbox" 
+                [checked]="item.status" 
+                (change)="handleCheckboxChange(item._id, $event)" 
+                class="h-5 w-5 text-blue-600 rounded-full"
+              />
+              <span [ngClass]="{ 'line-through': item.status, 'text-gray-700': item.status, 'text-gray-900': !item.status }">
+                {{ item.name }}
+              </span>
+            </div>
+            <button (click)="deleteItem(item._id)" class="text-red-500 hover:text-red-700">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </li>
+        </ng-container>
+      </ng-container>
+      <ng-container *ngIf="!items || items.length === 0">
+        <li class="text-center py-4 text-gray-500">No items found</li>
+      </ng-container>
+    </ul>
+  </div>
+
+  <button 
+    (click)="addItem()" 
+    class="fixed bottom-16 right-4 bg-blue-500 text-white rounded-full h-12 w-12 flex items-center justify-center shadow-lg hover:bg-blue-600 focus:outline-none"
+  >
+    <i class="fas fa-plus text-xl"></i>
+  </button>
+</div>

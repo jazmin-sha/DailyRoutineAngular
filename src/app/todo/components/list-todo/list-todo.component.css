@@ -1,0 +1,101 @@
+/* In your global styles or Tailwind CSS file */
+
+/* Style for the checkboxes */
+.form-checkbox {
+    appearance: none;
+    border-radius: 9999px;
+    border: 2px solid #ccc;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .form-checkbox:checked {
+    background-color: #4a90e2; /* Background color when checked */
+    border-color: #4a90e2; /* Border color when checked */
+  }
+  
+  /* Additional button styling */
+  .btn-primary {
+    @apply bg-blue-500 text-white py-1 px-3 rounded-lg text-sm font-medium;
+  }
+  .btn-primary:hover {
+    @apply bg-blue-600;
+  }
+
+  /* Tailwind CSS should handle most of this */
+.flex {
+    display: flex;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .border-b {
+    border-bottom-width: 1px;
+  }
+  .border-gray-200 {
+    border-color: #e5e7eb; /* Tailwind gray-200 color */
+  }
+  .text-red-500 {
+    color: #ef4444; /* Tailwind red-500 color */
+  }
+  .text-red-700 {
+    color: #b91c1c; /* Tailwind red-700 color */
+  }
+  .hover\:text-red-700:hover {
+    color: #b91c1c; /* Darker red on hover */
+  }
+  
+  /* Tailwind CSS should handle most of this */
+.fixed {
+    position: fixed;
+  }
+  .bottom-16 {
+    bottom: 4rem; /* Adjust based on footer height */
+  }
+  .right-4 {
+    right: 1rem;
+  }
+  .bg-blue-500 {
+    background-color: #3b82f6; /* Blue color */
+  }
+  .bg-blue-600 {
+    background-color: #2563eb; /* Darker blue color */
+  }
+  .text-white {
+    color: #ffffff; /* White text */
+  }
+  .rounded-full {
+    border-radius: 9999px; /* Fully rounded */
+  }
+  .h-12 {
+    height: 3rem; /* 48px */
+  }
+  .w-12 {
+    width: 3rem; /* 48px */
+  }
+  .flex {
+    display: flex;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .hover\:bg-blue-600:hover {
+    background-color: #2563eb; /* Darker blue color on hover */
+  }
+  .focus\:outline-none:focus {
+    outline: none;
+  }
+  
+  
